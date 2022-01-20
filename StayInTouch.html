@@ -108,7 +108,7 @@
       <!-- Main content -->
       <h2 class="text-center mt-5 mb-5 contact_list">Stay In Touch Responces</h2>
       <div class="w-75 mt-5 m-auto">
-        <table class="table">
+        <table class="table ">
           <thead>
             <tr class="">
               <th scope="col">Sr.No.</th>
@@ -159,5 +159,14 @@ crossorigin="anonymous"></script>
 <!-- AdminLTE App -->
 <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/js/adminlte.min.js"></script>
 <script src="/js/dashboard.js"></script>
+<script>
+  const hamburger = document.querySelector(".hamburger");
+  const sidebar = document.querySelector(".sidebar");
+  hamburger.addEventListener("click", mobileMenu);
+  function mobileMenu() {
+    hamburger.classList.toggle("active");
+    sidebar.classList.toggle("active");
+  }
+</script>
 </body>
 </html>

@@ -41,10 +41,3 @@ function clock() {
 }
 setInterval(clock, 1000);
 clock();
-const hamburger = document.querySelector(".hamburger");
-const sidebar = document.querySelector(".sidebar");
-hamburger.addEventListener("click", mobileMenu);
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    sidebar.classList.toggle("active");
-}
